@@ -5,11 +5,11 @@
 // change the value of the 2nd index element to jambura
 // console log the final array
 
-// const fruits = ["apel", "komola", "angur", "jam", "am"];
-// console.log(fruits)
-// console.log(fruits[3])
-// fruits[2]= "jambura";
-// console.log(fruits)
+const fruits = ["apel", "komola", "angur", "jam", "am"];
+console.log(fruits)
+console.log(fruits[3])
+fruits[2]= "jambura";
+console.log(fruits)
 
 
 
@@ -28,11 +28,11 @@
 // Remove the last tourist destination you have added
 // display the final array as output
 
-// const turist = ["rangamati", "syleth", "coxbazar"]
-// turist.push("citagong", "sitakundo")
-// console.log(turist)
-// turist.pop()
-// console.log(turist)
+const turist = ["rangamati", "syleth", "coxbazar"]
+turist.push("citagong", "sitakundo")
+console.log(turist)
+turist.pop()
+console.log(turist)
 
 
 
@@ -116,5 +116,12 @@ console.log(Array.isArray(numbers))
 const num1 = [1, 2, 3, 4];
 const num2 = [5, 6, 7, 8];
 
-const result = num1.concat(num2);
+const result = num1.concat(num2).join("_");
 console.log(result)
+
+for(const i of result){
+      console.log(i)
+}
+
+const combined = [...num1, ...num2];
+console.log("Combined Array using Spread:", combined);
